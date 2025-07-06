@@ -176,45 +176,6 @@ $ python wiki.py "How many days until Thanksgiving?"
 ✅ Answer: There are 145 days until Thanksgiving 2025.
 ```
 
-## Development
-
-### Testing
-
-```bash
-# Run basic test suite
-python test_agent.py
-
-# Run enhanced test suite (tests all tools)
-python test_agent_enhanced.py
-
-# Test specific tools
-python -c "from src.tools import ToolRegistry; print(ToolRegistry().list_tools())"
-```
-
-### Code Quality
-```bash
-# Format code
-python -m black src/
-
-# Type checking
-python -m mypy src/
-```
-
-## Documentation
-
-- **[AI_CONCEPTS.md](docs/AI_CONCEPTS.md)**: ReAct pattern, prompt engineering, tool orchestration
-- **[AI_CHALLENGES.md](docs/AI_CHALLENGES.md)**: Challenges encountered and solutions
-- **[OBSERVABILITY.md](docs/OBSERVABILITY.md)**: LangSmith integration guide
-- **[walkthrough.md](docs/walkthrough.md)**: Detailed code walkthrough
-
-## Future Enhancements
-
-- Additional tools (weather, news, calculations)
-- Multi-turn conversations with memory
-- Streaming responses
-- Tool result caching
-- Custom tool creation interface
-
 ## License
 
 This project is for educational purposes. Please ensure you comply with API terms of service for Anthropic, Google, and LangSmith.
