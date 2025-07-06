@@ -179,9 +179,13 @@ $ python wiki.py "How many days until Thanksgiving?"
 ## Development
 
 ### Testing
+
 ```bash
-# Run tests
+# Run basic test suite
 python test_agent.py
+
+# Run enhanced test suite (tests all tools)
+python test_agent_enhanced.py
 
 # Test specific tools
 python -c "from src.tools import ToolRegistry; print(ToolRegistry().list_tools())"
